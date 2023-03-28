@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <img id="icon" src="bars-solid.svg" alt="" class="checkbtn">
+        </label>
+        <label class="logo"> <img src="logo-removebg-preview.png" alt=""></label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container">
+            <h1 class="form-title">Registration</h1>
+            <form action="#">
+                <div class="main-user-info">
+                    <div class="user-input-box">
+                        <label for="fullName">*Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" required>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="email">*Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="dob">*Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+
+                    </div>
+                    <div class="user-input-box">
+                        <label for="phoneNumber">*Phone Number</label>
+                        <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number"
+                            required min="0" max="10000000000">
+                    </div>
+                    <div class="user-input-box">
+                        <label for="rating">*Rating</label>
+                        <select name="rating" id="rating"> 
+                            <option value="Very good">Very Good</option required>
+                            <option value="Good">Good</option>
+                            <option value="Avergae">Average</option>
+                            <option value="Poor">Poor</option>
+                            <option value="Very Poor">Very Poor</option>
+                        </select>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="feedback">Feedback </label>
+                        <textarea id="feedback" name="feedback" rows="2" cols="35">
+                        </textarea>
+                    </div>
+                <div class="gender-details-box">
+                    <span class="gender-title">*Gender</span>
+                    <div class="gender-category">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <div class="form-submit-btn">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>By continuing you agree to our Terms of Service and Privacy Policy, and aldo give consent to receive offers and opportunities from us by telephone, text message, and email. </p>
+    </footer>
+
+</body>
+
+</html>
